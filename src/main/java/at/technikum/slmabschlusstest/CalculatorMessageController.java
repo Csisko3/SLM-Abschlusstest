@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CalculatorMessageController {
 
-    @GetMapping("/api/digit")
+    @GetMapping("/api/digitsum")
     public int getSum (@RequestParam int number){
         int digit, sum = 0;
 
