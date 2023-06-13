@@ -16,6 +16,8 @@ public class CalculatorMessageController {
             sum = sum + digit;
             number = number/10;
         }
-        return number;
+        return sum;
     }
+
+
 }
