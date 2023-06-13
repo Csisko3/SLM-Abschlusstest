@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CalculatorMessageController {
 
-    @GetMapping
-    public int getSum (@RequestParam int numb){
+    @GetMapping("/api/digitsum/number")
+    public int getSum (@RequestParam int number){
         int digit, sum = 0;
 
-        while (numb > 0){
-            digit = numb % 10;
+        while (number > 0){
+            digit = number % 10;
             sum = sum + digit;
-            numb = numb/10;
+            number = number/10;
         }
-        return numb;
+        return number;
     }
 }
