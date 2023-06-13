@@ -22,7 +22,7 @@ public class CalculatorMessageController {
     }
 
     @GetMapping("/api/digitsum/usage")
-    public int usage() {
+    public static int usage() {
         return counter;
     }
 
