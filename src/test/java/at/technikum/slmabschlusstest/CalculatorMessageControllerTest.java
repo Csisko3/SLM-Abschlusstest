@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculatorMessageControllerTest {
-
+    @Test
     void getSumTest(){
         int i = 1234;
         assertEquals(10,CalculatorMessageController.getSum(i));
